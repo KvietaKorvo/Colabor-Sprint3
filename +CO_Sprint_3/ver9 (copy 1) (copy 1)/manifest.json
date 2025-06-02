@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Take a Break Canvas Collage",
+  "version": "1.0",
+  "description": "Typographic collage that assembles into 'Take a break!' and then disperses.",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
