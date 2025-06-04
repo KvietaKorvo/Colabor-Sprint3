@@ -63,7 +63,7 @@
       }
     }
 
-    // Create the small chars forming the text shape (like your original collage)
+    // Create the small chars forming the text shape
     const sampleText = document.body.innerText.replace(/\s+/g, '') || "abcdefghijklmnopqrstuvwxyz";
 
     // Spread small chars on the text shape points
