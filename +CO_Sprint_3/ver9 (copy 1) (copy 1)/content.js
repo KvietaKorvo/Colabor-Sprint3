@@ -32,7 +32,7 @@
     });
     document.body.appendChild(container);
 
-    // Fade in background container
+    // Fade in background
     setTimeout(() => {
       container.style.opacity = '1';
     }, 100);
@@ -107,7 +107,7 @@
     const originalElements = getElementsToAnimate();
     const clones = [];
 
-    // We will animate max the number of points or elements, whichever smaller
+    // animate max the number of points or elements, whichever smaller
     const maxClones = Math.min(originalElements.length, points.length);
 
     for (let i = 0; i < maxClones; i++) {
@@ -148,7 +148,7 @@
       }, 800);
     });
 
-    // After hold time, animate clones back to original places
+    //Animate clones back to original places
     setTimeout(() => {
       clones.forEach(({ clone, origRect }) => {
         clone.style.left = `${origRect.left}px`;
@@ -159,7 +159,7 @@
         clone.style.transform = 'none';
       });
 
-      // Also scatter the small chars away and fade out
+      // Scatter the small chars away and fade out
       spans.forEach((span, i) => {
         setTimeout(() => {
           span.style.left = `${Math.random() * width}px`;
